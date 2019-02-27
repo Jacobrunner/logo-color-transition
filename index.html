@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>transitions</title>
+
+<style>
+body {
+  height:100vh;
+  width:100wh;
+  margin:0;
+  
+  background: linear-gradient(-225deg, #B0701C, #CC2784, #213FCA, #159CCA );
+  backrgound-repeat: no-repeat;
+  background-size: 400% 400%;
+  animation: color 50s ease infinite;
+  
+}
+
+#square {
+  border-radius:10px;
+  height:250px;
+  width:300px;
+  transform: perspective(400px) rotateY(-25deg);
+  background-color: rgba(0, 0, 0, .32);
+  position:absolute;
+  left:45%;
+  top:40%;
+  animation: low 50s ease infinite;
+}
+#square1{
+  position:absolute;
+  top:2%;
+  left:2%;
+  height:45%;
+  width:45%;
+  background: black;
+  animation: lo 50s ease infinite;
+}
+
+#square2{
+  position:absolute;
+  top:2%;
+  left:52%;
+  right:200px;
+  height:45%;
+  width:45%;
+  background-color: black;
+  animation: lo 50s ease infinite;
+}
+
+#square3{
+  position:absolute;
+  top:52%;
+  left:2%;
+  height:45%;
+  width:45%;
+  background-color: black;
+  animation: lo 50s ease infinite;
+}
+
+#square4{
+  position:absolute;
+  top:52%;
+  left:52%;
+  right:200px;
+  height:45%;
+  width:45%;
+  background-color: black;
+  animation: lo 50s ease infinite;
+}
+
+
+@keyframes color {
+  0%{
+   background-position: 0% 0%; 
+  }
+  25%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  75%{
+    background-positions: 50% 50%;
+  }
+  100%{background-positions: 0% 0%;}
+}
+@keyframes lo {
+  0%{background:black;}
+  25%{background:black;}
+  50%{background:white;}
+  75%{background:black;}
+  100%{background:black;}
+}
+
+</style>
+</head>
+<body>
+ <div id="square" >
+    <div id="square1">
+      
+    </div>
+    <div id="square2">
+      
+    </div>
+     <div id="square3">
+      
+    </div>
+     <div id="square4">
+      
+    </div>
+  </div>
+
+</body>
+</html>
